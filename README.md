@@ -1,4 +1,4 @@
-Zip File Unzip Module
+File Unzip Module
 =============================
 
 This is an example of a custom source module using the Spring Integration Zip Transformer to unzip files. This is built and packaged for installation in a Spring XD runtime environment using maven. The project includes sample unit and integration tests, including the ability to test the module in an embedded single node container. It also illustrates how to define module options using simple property descriptors.
