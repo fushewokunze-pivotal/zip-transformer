@@ -68,7 +68,7 @@
 		</dependency>
 
 	</dependencies>
-	
+
 	<repositories>
 		<repository>
 			<id>jcenter</id>
@@ -102,6 +102,6 @@
 			</releases>
 		</repository>
 	</repositories>
-	
+
 
 </project>
