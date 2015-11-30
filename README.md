@@ -15,6 +15,10 @@ This implements a processor module which unzips files from a file system locatio
 
 ## Building with Maven
 
+Load the zip-transformer-1.0.0.BUILD-SNAPSHOT.jar from src/main otherwise build it from [spring-integration-extentions] https://github.com/spring-projects/spring-integration-extensions/tree/master/spring-integration-zip then load it into your local maven repo (until we have it in the public maven repo)
+	
+	$ mvn install:install-file -Dfile=src/main/spring-integration-zip-1.0.0.BUILD-SNAPSHOT.jar -DgroupId=org.springframework.integration -DartifactId=spring-integration-zip -Dversion=1.0.0.BUILD-SNAPSHOT -Dpackaging=jar
+	
 	$ mvn package
 
 The project's [pom][] declares `spring-xd-module-parent` as its parent. This adds the dependencies needed to test the module and also configures the [Spring Boot Maven Plugin][] to package the module as an uber-jar, packaging any dependencies that are not already provided by the Spring XD container. See the [Modules][] section in the Spring XD Reference for a more detailed explanation of module class loading.
